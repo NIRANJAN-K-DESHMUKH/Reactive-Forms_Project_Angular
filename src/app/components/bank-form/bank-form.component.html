@@ -1,0 +1,58 @@
+<h2>Bank Form</h2>
+<form [formGroup]="bankForm" (ngSubmit)="onSubmit()">
+
+  <label>Name:
+    <input formControlName="name">
+  </label><br>
+
+  <label>Account Number:
+    <input formControlName="accountNumber">
+  </label><br>
+
+  <label>Email:
+    <input type="email" formControlName="email">
+  </label><br>
+
+  <label>Account Type:
+    <select formControlName="accountType">
+      <option value="">Select</option>
+      <option value="savings">Savings</option>
+      <option value="current">Current</option>
+    </select>
+  </label><br>
+
+  <label>Balance:
+    <input type="number" formControlName="balance">
+  </label><br>
+
+  <label>Date of Birth:
+    <input type="date" formControlName="dob">
+  </label><br>
+
+  <label>Gender:
+    <input type="radio" formControlName="gender" value="male"> Male
+    <input type="radio" formControlName="gender" value="female"> Female
+  </label><br>
+
+  <label>Mobile Number:
+    <input type="text" formControlName="mobile">
+  </label><br>
+
+  <label>PAN Number:
+    <input type="text" formControlName="pan">
+  </label><br>
+
+  <label>Account Open Date:
+    <input type="date" formControlName="openDate">
+  </label><br>
+
+  <label>
+    <input type="checkbox" formControlName="isInternational"> Is International Account?
+  </label><br>
+
+  <label>
+    <input type="checkbox" formControlName="agreeTerms"> I agree to terms & conditions
+  </label><br>
+
+  <button type="submit">Submit</button>
+</form>
