@@ -1,6 +1,6 @@
 h2 {
   margin: 5% 40%;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
 }
 
 form {
@@ -10,7 +10,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
   }
   
   label {

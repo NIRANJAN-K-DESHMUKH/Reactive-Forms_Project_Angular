@@ -1,14 +1,32 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-bank-form',
-  imports: [ReactiveFormsModule],
-  templateUrl: './bank-form.component.html',
-  styleUrl: './bank-form.component.css'
+  selector: 'app-bank-form-material',
+  imports: [ 
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule,
+  ],
+  templateUrl: './bank-form-material.component.html',
+  styleUrl: './bank-form-material.component.css',
 })
-
-export class BankFormComponent {
+export class BankFormMaterialComponent {
+  
   bankForm !: FormGroup;
 
   constructor(private fb: FormBuilder) {}
